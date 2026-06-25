@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function StudentShell({children}:{children:React.ReactNode}){return <main className="min-h-screen bg-[radial-gradient(circle_at_top_left,#164e63,transparent_35%),#020617] p-6"><div className="mx-auto max-w-7xl"><div className="mb-6 flex items-center justify-between"><Link href="/dashboard" className="text-2xl font-black">PrepVault<span className="text-cyan-300"> AI</span></Link><div className="text-sm text-slate-300">XP 1240 • Streak 7 days</div></div>{children}</div></main>}

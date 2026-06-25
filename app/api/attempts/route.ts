@@ -1,0 +1,2 @@
+import { NextResponse } from 'next/server';import { query } from '@/lib/db';
+export async function POST(req:Request){const body=await req.json(); await query('insert into attempts(user_id,test_id,level_id,mode,total_questions,correct_count,percentage,passed) values($1,$2,$3,$4,$5,$6,$7,$8)',[body.user_id,body.test_id,body.level_id,body.mode||'level_test',body.total_questions,body.correct_count,body.percentage,body.percentage>=85]).catch(()=>null); return NextResponse.json({ok:true,passed:body.percentage>=85});}

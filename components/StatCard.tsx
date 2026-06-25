@@ -1,0 +1,1 @@
+export default function StatCard({label,value}:{label:string,value:any}){return <div className="glass rounded-3xl p-6 shadow-glow"><div className="text-slate-400 text-sm">{label}</div><div className="text-3xl font-black mt-2">{value}</div></div>}

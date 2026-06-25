@@ -1,0 +1,3 @@
+import StudentShell from '@/components/StudentShell';import Link from 'next/link';
+export const dynamic='force-dynamic';
+export default function Result(){return <StudentShell><div className="glass rounded-3xl p-8"><h1 className="text-4xl font-black">Result Saved</h1><p className="text-slate-400 mt-3">Client-side demo stores instant result. With Neon connected, attempts can be saved through the API.</p><div className="mt-6 text-2xl font-black text-cyan-300">85%+ unlocks next level</div><Link href="/dashboard" className="inline-block mt-6 rounded-xl neon px-5 py-3 font-bold">Back to Dashboard</Link></div></StudentShell>}

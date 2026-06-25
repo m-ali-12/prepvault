@@ -1,0 +1,3 @@
+import StudentShell from '@/components/StudentShell';import { query } from '@/lib/db';import { fallbackQuestions } from '@/lib/data';import TestClient from './test-client';
+export const dynamic='force-dynamic';
+export default async function TestPage({params}:{params:{levelId:string}}){let questions:any[]=await query('select * from questions where level_id=$1 and is_verified=true order by random() limit 20',[params.levelId]); if(!questions.length) questions=fallbackQuestions; return <StudentShell><h1 className="text-4xl font-black mb-6">Level Test</h1><TestClient questions={questions} levelId={params.levelId}/></StudentShell>}

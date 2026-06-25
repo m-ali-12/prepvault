@@ -1,0 +1,2 @@
+import StudentShell from '@/components/StudentShell';
+export default function AiTutor(){return <StudentShell><h1 className="text-4xl font-black mb-6">AI Tutor</h1><div className="glass rounded-3xl p-6"><textarea className="w-full min-h-40 rounded-2xl bg-white/10 p-4" placeholder="Ask any HAT/LAT/ECAT/MDCAT question..."></textarea><button className="mt-4 rounded-xl neon px-6 py-3 font-bold">Ask AI</button></div></StudentShell>}

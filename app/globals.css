@@ -1,0 +1,4 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{color-scheme:dark} body{background:#020617;color:white} .glass{background:rgba(15,23,42,.72);border:1px solid rgba(148,163,184,.18);backdrop-filter:blur(18px)} .neon{background:linear-gradient(135deg,#06b6d4,#2563eb,#7c3aed)}
